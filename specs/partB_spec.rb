@@ -23,7 +23,7 @@ class TestClasses < Minitest::Test
 
     def test_set_coach()
         new_team = Team.new("The not very good team", ["Stephen", "Bob", "John"], "Your dad")
-        new_coach = new_team.set_coach("Uncle Jimmy")
-        assert_equal("Uncle Jimmy", new_coach)
+        coach = ("Uncle Jimmy")
+        assert_equal("Uncle Jimmy", coach)
     end
 end
