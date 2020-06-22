@@ -12,6 +12,12 @@ class Team
         @players = players.push(name)
     end
 
+    def find_player(name)
+        for player in @players
+            return player if (name == player)
+        end
+    end
+
     # def name()
     #     return @name
     # end
