@@ -15,4 +15,9 @@ class TestClasses < Minitest::Test
         new_team = Team.new("The not very good team", ["Stephen", "Bob", "John"], "Your dad")
         assert_equal(["Stephen", "Bob", "John"], new_team.players())
     end
+
+    def test_get_coach()
+        new_team = Team.new("The not very good team", ["Stephen", "Bob", "John"], "Your dad")
+        assert_equal("Your dad", new_team.coach())
+    end
 end
