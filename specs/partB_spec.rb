@@ -38,4 +38,10 @@ class TestClasses < Minitest::Test
         find_player = new_team.find_player("Stephen")
         assert_equal("Stephen", find_player)
     end
+
+    def test_add_points()
+        new_team = Team.new("The not very good team", ["Stephen", "Bob", "John"], "Your dad")
+        won_game = new_team.add_points(true)
+        assert_equal(10, new_team.points())
+    end
 end
