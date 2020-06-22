@@ -23,4 +23,8 @@ class Student
     def talk(string)
         return string
     end
+
+    def favourite_programming_language(language)
+        return "My favourite programming language is #{language}"
+    end
 end
